@@ -293,7 +293,7 @@
                                     </div>
                                 </div>
 
-                                <button class="btn btn-primary" id="btnMain">Calculate</button>
+                                <button class="btn btn-primary" id="btnMain" style="margin-top: 10px;">Calculate</button>
 
                             </div>
                             <div class="col-sm-6">
@@ -323,21 +323,40 @@
     </div>
 
     <div class="modal" id="myModal2">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-l">
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Here is my Factorial Challenge</h4>
+                    <h4 class="modal-title">Model Excercise</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6">
-                                <input type="text" id="fact" placeholder="input factorial..."/>
-                            </div>
+                            <div class="col text-center">Here is my Factorial Challenge</div>
                         </div>
+                        <hr/>
+                        <div class="row">
+                            <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" id="fact" placeholder="input factorial..."  style="width: 70%"/>
+                            </div>
+                        </div>                       
+
+                            <button class="btn btn-danger" id="btnFact" style="margin-top: 20px;">Factorialize!!!</button>
+                                </div>
+
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col text-center">
+                            Results are.. <br/>
+                            <p id="factorResults"></p>
+                               </div>
+                            </div>
+                         </div>
+                       </div>
 
                     </div>
 
@@ -682,6 +701,7 @@
 
 
     <script>
+             //The Math Challenge
         $("#btnMain").click(function () {
             //step 1: get the user data
             var num1 = Number($("#input1").val());
@@ -704,6 +724,19 @@
             $("#division").text("The product of your numbers are " + divi);
             $("#average").text("The average of your numbers are " + mean);
         });
+
+        //The Factorial Challenge
+        $("#btnFact").click(function () {
+            //Step 1: Get user data
+            var factual = Number($("#fact").val());
+            //Step 2: Calculate Factorial
+            var i = factual;
+            for (; i < 10000; i++) {
+
+            }
+        }
+
+
     </script>
 
 
