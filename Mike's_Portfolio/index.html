@@ -265,9 +265,9 @@
                                 <div class="row">
                                     <div class="col">
                                         <input type="text" id="input1" placeholder="enter number1 " />
-
                                     </div>
                                 </div>
+
                                 <div class="row">
                                     <div class="col">
                                         <input type="text" id="input2" placeholder="enter number2 " />
@@ -341,7 +341,7 @@
                             <div class="col-sm-6">
                         <div class="row">
                             <div class="col">
-                                <input type="text" id="fact" placeholder="input factorial..."  style="width: 70%"/>
+                             <input type="text" id="fact" placeholder="input factorial..."  style="width: 70%"/>
                             </div>
                         </div>                       
 
@@ -351,8 +351,8 @@
                         <div class="col-sm-6">
                             <div class="row">
                                 <div class="col text-center">
-                            Results are.. <br/>
-                            <p id="factorResults"></p>
+                                    Results are.. <br/>
+                                    <p id="factorResults"></p>
                                </div>
                             </div>
                          </div>
@@ -378,7 +378,32 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    Modal body..
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">Here is my Palindrome Challenge</div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="Pal" placeholder="enter text" style="width: 70%" />
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-secondary" id="btnPal" style="margin-top: 20px;">Palintize!!!</button>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col text-center">
+                                        Results are.. <br />
+                                        <p id="palindromeResults"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Modal footer -->
                 <div class="modal-footer">
@@ -397,7 +422,33 @@
                 </div>
                 <!-- Modal body -->
                 <div class="modal-body">
-                    Modal body..
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">Here is my FizzBuzz Challenge</div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="fizz" placeholder="enter fizz" style="width: 70%" /><br />
+                                        <p><input type="text" id="buzz" placeholder="enter buzz" style="width:70%" /></p>
+                                       </div>
+                                          </div>                                
+
+                                <button class="btn btn-light" id="btnFizz" style="margin-top: 5px;">FizzBuzz!!!</button>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col text-center">
+                                        Results are.. <br />
+                                        <p id="palindromeResults"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Modal footer -->
                 <div class="modal-footer">
@@ -569,7 +620,7 @@
                         </div>
                         <div>
                             <h3 class="mb-4">Email Address</h3>
-                            <p><a href="mailto:info@yoursite.com"><span style="font-size:10px">michaelhntn1990@gmail.com</span></a></p>
+                            <p><a href="mailto:info@yoursite.com"><span style="font-size:15px">michaelhntn1990@gmail.com</span></a></p>
                         </div>
                     </div>
                 </div>
@@ -730,18 +781,51 @@
             //Step 1: Get user data
             var factual = Number($("#fact").val());
             //Step 2: Calculate Factorial
+            //i represents the integer the user inputs
             var i = factual;
-            for (; i < 10000; i++) {
+            //mult matches the decremented integer that needs to be multiplied alongside users number
+            var mult = 1;
+            //for loop expresses how the integer from user will be decremented
+            for (; i > 0; i--) {
+                //this represents 1 * user's integer
+                mult *= i;
+            }
+            $("#factorResults").text("The Factorial of your number will be " +  mult);
+        });
+
+        //The Palindrome Challenge
+        $("#btnPal").click(function () {
+            //Step 1: Get user data
+            var palin = $("#Pal").val();
+            //Step 2:Calculate how to determine palindrome
+            var lowCase = palin.toLowerCase();
+            var array = lowCase.split("");
+            var reArray = array.reverse();
+            var string = reArray.join("");         
+            //Step 3: Output the data to user using if else statement
+            if (lowCase === string) {
+            $("#palindromeResults").text('Hooray ' + palin + ' is a palindrome!')
+            }
+            else {
+            $("#palindromeResults").text('This is not a palindrome.')
+            }                                            
+        })
+
+        //The ominous FizzBuzz Challenge
+        $("#btnFizz").click(function () {
+            //Step 1: Get user data
+            var fizz = $("#fizz").val();
+            var buzz = $("#buzz").val();
+            //Step 2: Calculate for FizzBuzz
+            var i = 0
+            for (; i <= 100; i++) {
 
             }
-        }
 
+            //Step 3: Out findings to user
+
+        })
 
     </script>
-
-
-
-
-
 </body>
 </html>
