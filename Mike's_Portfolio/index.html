@@ -443,7 +443,7 @@
                                 <div class="row">
                                     <div class="col text-center">
                                         Results are.. <br />
-                                        <p id="palindromeResults"></p>
+                                        <p id="fizzbuzzResults"></p>
                                     </div>
                                 </div>
                             </div>
@@ -817,13 +817,28 @@
             var fizz = $("#fizz").val();
             var buzz = $("#buzz").val();
             //Step 2: Calculate for FizzBuzz
-            var i = 0
+            var returnValue = "";
+            var i = 1
             for (; i <= 100; i++) {
-
+                if (i % fizz == 0 && i % buzz == 0) {
+            //Step 3: Output findings to user
+            $("#fizzbuzzResults").text(returnValue += 'FizzBuzz ');
             }
+            else if (i % fizz == 0) {
+            $("#fizzbuzzResults").text(returnValue += 'Fizz ');
+            }
+            else if (i % buzz == 0) {
+            $("#fizzbuzzResults").text(returnValue += 'Buzz ');
+            }
+            else {
+            $("#fizzbuzzResults").text(returnValue += i + ' ');
+            }
+            }
+                
+                
 
-            //Step 3: Out findings to user
-
+            
+            
         })
 
     </script>
