@@ -325,10 +325,10 @@
                                 </div>
                                 <div class="row" id="spacing">
                                     <div class="col-sm-4">
-                                        <button class="btn btn-primary" id="btnMain">Calculate</button>
+                                        <button class="btn btn-success" id="btnMain">Calculate</button>
                                     </div>
                                     <div class="col-sm-4">
-                                        <button class="btn btn-outline-info" id="clearMain">Clear</button>
+                                        <button class="btn btn-info" id="clearMain">Clear</button>
                                     </div>
                                     <div class="col-sm-4">
                                         <button class="btn btn-warning" id="codeMain">Code</button>
@@ -411,17 +411,15 @@
                                 </div>
                                 <div class="row" id="spacing">
                                     <div class="col-sm-4">
-                                        <button class="btn btn-danger" id="btnFact">Factorialize</button>
+                                        <button class="btn btn-success" id="btnFact">Factorialize</button>
                                     </div>
                                     <div class="col-sm-4">
-                                        <button class="btn btn-light" id="clearFact">Clear</button>
+                                        <button class="btn btn-info" id="clearFact">Clear</button>
                                     </div>
                                     <div class="col-sm-4">
-                                        <button class="btn btn-light" id="codeFact">Code</button>
+                                        <button class="btn btn-warning" id="codeFact">Code</button>
                                     </div>
                                 </div>
-
-
                             </div>
 
                             <div class="col-sm-6">
@@ -490,13 +488,13 @@
                                 </div>
                                 <div class="row" id="spacing">
                                     <div class="col-sm-4">
-                                        <button class="btn btn-secondary" id="btnPal">Palintize</button>
+                                        <button class="btn btn-success" id="btnPal">Palintize</button>
                                     </div>
                                     <div class="col-sm-4">
-                                        <button class="btn btn-light" id="clearPal">Clear</button>
+                                        <button class="btn btn-info" id="clearPal">Clear</button>
                                     </div>
                                     <div class="col-sm-4">
-                                        <button class="btn btn-light" id="codePal">Code</button>
+                                        <button class="btn btn-warning" id="codePal">Code</button>
                                     </div>
                                 </div>                                                                
                             </div>
@@ -570,13 +568,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-4">
-                                        <button class="btn btn-light" id="btnFizz">FizzBuzz</button>
+                                        <button class="btn btn-success" id="btnFizz">FizzBuzz</button>
                                     </div>
                                     <div class="col-sm-4">
-                                        <button class="btn btn-light" id="clearFizz">Clear</button>
+                                        <button class="btn btn-info" id="clearFizz">Clear</button>
                                     </div>
                                     <div class="col-sm-4">
-                                        <button class="btn btn-light" id="codeFizz">Code</button>
+                                        <button class="btn btn-warning" id="codeFizz">Code</button>
                                     </div>
                                 </div>
                             </div>
@@ -927,9 +925,10 @@
 
     <script>SyntaxHighlighter.all()</script>
 
-    <script>
-        //Show/Hide Code button
+    <script>        
+        //Show/Hide Code button Math Challenge
         $(function () {
+            $("#mainCode").hide();
             //The Math Challenge
             $("#btnMain").click(function () {
                 //step 1: get the user data
@@ -963,7 +962,7 @@
                 $("#average").text("");
             });
 
-            $("#mainCode").hide();
+            
             $("#codeMain").click(function () {
                 $("#mainCode").toggle();
 
@@ -975,7 +974,7 @@
                 };
             });
         })
-        //Show/Hide Code button
+        //Show/Hide Code button Factorial
         $(function () {
             $("#factorCode").hide();
             $("#codeFact").click(function () {
@@ -986,7 +985,7 @@
                 }
                 else {$(this).text("Code")}
             })
-            //The Factorial Challenge
+            //The Factorial Challenge 
             $("#btnFact").click(function () {
                 //Step 1: Get user data
                 var factual = Number($("#fact").val());
@@ -1008,7 +1007,7 @@
                 $("#factorResults").text("")
             })
             })
-        //Show/Hide Code button
+        //Show/Hide Code button Palindrome
         $(function () {
             $("#dromeCode").hide();
             $("#codePal").click(function () {
@@ -1041,7 +1040,7 @@
                 $("#palindromeResults").text("")
             })
             })
-        //Show/Hide Code button
+        //Show/Hide Code button FizzBuzz
         $(function () {
             $("#fizzyCode").hide();
             $("#codeFizz").click(function () {
