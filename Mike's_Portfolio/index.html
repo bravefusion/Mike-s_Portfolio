@@ -27,8 +27,13 @@
          margin-top: 20px;
      }
      #clearFact {
-         margin-left: 30px;
+         /*margin-left: 30px;*/
      }
+
+    .btn {
+        width: 120px
+    }
+    
  </style>
 
     <link href="Scripts/SyntaxHighlighter/styles/shCore.css" rel="stylesheet" />
@@ -98,7 +103,7 @@
                         <div class="col-md-12 heading-section ftco-animate">
                             <h1 class="big">About</h1>
                             <h2 class="mb-4">About Me</h2>
-                            <p>Originally from Clayton NC, a software developer trying to follow his dreams.</p>
+                            <p>Originally from Clayton NC, a software developer trying to follow his dreams. I love to watch anime, Fullmetal Alchemist is my favorite. Video games are a big hobby of mine as well as dancing, primarily hip hop.</p>
                             <ul class="about-info mt-4 px-md-0 px-2">
                                 <li class="d-flex"><span>Name:</span> <span>Michael Hinton</span></li>
                                 <li class="d-flex"><span>Date of birth:</span> <span>November 19, 1990</span></li>
@@ -154,7 +159,7 @@
                         <span class="date">2010-2015</span>
                         <h2>Bachelor of Art in Computer Graphics</h2>
                         <span class="position">Winston-Salem State University</span>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="resume-wrap d-flex ftco-animate">
@@ -162,10 +167,10 @@
                         <span class="flaticon-ideas"></span>
                     </div>
                     <div class="text pl-3">
-                        <span class="date">2014-2015</span>
-                        <h2>Computer Processing Systems/Computer Software</h2>
-                        <span class="position">Cambridge University</span>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <span class="date">2019</span>
+                        <h2>Certificate of Completion</h2>
+                        <span class="position">Coder Foundry</span>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -252,8 +257,8 @@
                             <i class="flaticon-ux-design"></i>
                         </span>
                         <div class="desc">
-                            <h3 class="mb-5">Code Challenge 5</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <h3 class="mb-5">The Sum of all fears</h3>
+                            <p>Coding challenge coming soon</p>
                         </div>
                     </a>
                 </div>
@@ -264,7 +269,7 @@
                         </span>
                         <div class="desc">
                             <h3 class="mb-5">Coming Soon...</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <p>Coding challenge coming soon.</p>
                         </div>
                     </a>
                 </div>
@@ -347,8 +352,8 @@
                                     </div>
                                 </div>
                              </div>   
-                                                                        
-                        <pre class="brush: js" id="mainCode">
+                         <div id="mainCode">                                             
+                        <pre class="brush: js" >
                         //The Math Challenge
                         $("#btnMain").click(function () {
                             //step 1: get the user data
@@ -373,7 +378,7 @@
                             $("#average").text("The average of your numbers are " + mean);
                         });                                            
                         </pre>                                                                       
-                            
+                          </div>  
                         </div>
                     </div>
 
@@ -430,9 +435,9 @@
                                     </div>
                                 </div>
                             </div>
-                                                           
-                        <pre class="brush: js" id="factorCode">
-                            //The Factorial Challenge
+                        <div id="factorCode">
+                            <pre class="brush: js">
+                        //The Factorial Challenge
                         $("#btnFact").click(function () {
                             //Step 1: Get user data
                             var factual = Number($("#fact").val());
@@ -452,7 +457,7 @@
                         })           
                         });                                            
                         </pre>
-                            
+                            </div>
                         </div>
                     </div>
 
@@ -507,8 +512,8 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <pre class="brush: js" id="dromeCode">
+                            <div id="dromeCode">
+                                <pre class="brush: js">
                               //The Palindrome Challenge
                             $("#btnPal").click(function () {
                                 //Step 1: Get user data
@@ -531,6 +536,7 @@
                                 $("#palindromeResults").text("")
                             })             
                         </pre>
+                            </div>
 
 
                         </div>
@@ -587,8 +593,8 @@
                                 </div>
                             </div>
                         </div>
-
-                        <pre class="brush: js" id="fizzyCode">
+                        <div id="fizzyCode">
+                         <pre class="brush: js">
                          //The ominous FizzBuzz Challenge
                         $("#btnFizz").click(function () {
                             //Step 1: Get user data
@@ -619,7 +625,7 @@
                             $("#fizzbuzzResults").text("")
                         })                  
                         </pre>
-
+                        </div>
                     </div>
                 </div>
                 <!-- Modal footer -->
@@ -684,7 +690,7 @@
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                            <h3><a href="#">My Blog</a></h3>
                             <span>Project 1</span>
                         </div>
                     </div>
@@ -693,7 +699,7 @@
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-2.jpg);">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                            <h3><a href="#">My Bug Tracker</a></h3>
                             <span>Project 2</span>
                         </div>
                     </div>
@@ -703,7 +709,7 @@
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-3.jpg);">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                            <h3><a href="#">My Finacial Portal Part 1</a></h3>
                             <span>Project 3</span>
                         </div>
                     </div>
@@ -712,7 +718,7 @@
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-4.jpg);">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                            <h3><a href="#">My Financial Portal Part 2</a></h3>
                             <span>Project 4</span>
                         </div>
                     </div>
@@ -825,7 +831,7 @@
                             <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                            <input type="submit" value="Message" class="btn btn-primary py-3 px-5">
                         </div>
                     </form>
                 </div>
@@ -844,7 +850,7 @@
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">About</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p>Here to help anyway I can, you can reach me through phone, email or through this very site.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                             <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -858,7 +864,7 @@
                         <ul class="list-unstyled">
                             <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
                             <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Code Challenges</a></li>
                             <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
                             <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
                         </ul>
@@ -870,9 +876,7 @@
                         <ul class="list-unstyled">
                             <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
                             <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>                            
                         </ul>
                     </div>
                 </div>
@@ -881,8 +885,8 @@
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">1502 Brandonshire Ct. Apt 302 Greensboro NC, 27409</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(336)-509-3254</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
                             </ul>
                         </div>
@@ -923,165 +927,8 @@
     <script src="Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
     <script src="Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
 
-    <script>SyntaxHighlighter.all()</script>
-
-    <script>        
-        //Show/Hide Code button Math Challenge
-        $(function () {
-            $("#mainCode").hide();
-            //The Math Challenge
-            $("#btnMain").click(function () {
-                //step 1: get the user data
-                var num1 = Number($("#input1").val());
-                var num2 = Number($("#input2").val());
-                var num3 = Number($("#input3").val());
-                var num4 = Number($("#input4").val());
-                var num5 = Number($("#input5").val());
-
-                //Step 2: Make calculations with the data
-                var min = Math.min(num1, num2, num3, num4, num5);
-                var max = Math.max(num1, num2, num3, num4, num5);
-                var sum = num1 + num2 + num3 + num4 + num5;
-                var mean = sum / 5;
-                var divi = num1 / num2 / num3 / num4 / num5;
-
-                //Step 3: Output the data to the user
-                $("#small").text("The smallest number is " + min);
-                $("#big").text("The biggest number is " + max);
-                $("#results").text("The sum of your numbers are " + sum);
-                $("#division").text("The product of your numbers are " + divi);
-                $("#average").text("The average of your numbers are " + mean);
-            });
-
-            $("#clearMain").click(function () {
-                $("#input1,#input2,#input3,#input4,#input5").val("");
-                $("#small").text("");
-                $("#big").text("");
-                $("#results").text("");
-                $("#division").text("");
-                $("#average").text("");
-            });
-
-            
-            $("#codeMain").click(function () {
-                $("#mainCode").toggle();
-
-                if ($(this).text() == "Code") {
-                    $(this).text("Hide");
-                }
-                else {
-                    $(this).text("Code")
-                };
-            });
-        })
-        //Show/Hide Code button Factorial
-        $(function () {
-            $("#factorCode").hide();
-            $("#codeFact").click(function () {
-                $("#factorCode").toggle();
-
-                if ($(this).text() == "Code") {
-                    $(this).text("Hide");
-                }
-                else {$(this).text("Code")}
-            })
-            //The Factorial Challenge 
-            $("#btnFact").click(function () {
-                //Step 1: Get user data
-                var factual = Number($("#fact").val());
-                //Step 2: Calculate Factorial
-                //i represents the integer the user inputs
-                var i = factual;
-                //mult matches the decremented integer that needs to be multiplied alongside users number
-                var mult = 1;
-                //for loop expresses how the integer from user will be decremented
-                for (; i > 0; i--) {
-                    //this represents 1 * user's integer
-                    mult *= i;
-                }
-                $("#factorResults").text("The Factorial of your number will be " + mult);
-            });
-
-            $("#clearFact").click(function () {
-                $("#fact").val("")
-                $("#factorResults").text("")
-            })
-            })
-        //Show/Hide Code button Palindrome
-        $(function () {
-            $("#dromeCode").hide();
-            $("#codePal").click(function () {
-                $("#dromeCode").toggle();
-
-                if ($(this).text() == "Code") {
-                    $(this).text("Hide");
-                }
-                else { $(this).text("Code") }
-            })
-            //The Palindrome Challenge
-            $("#btnPal").click(function () {
-                //Step 1: Get user data
-                var palin = $("#Pal").val();
-                //Step 2:Calculate how to determine palindrome
-                var lowCase = palin.toLowerCase();
-                var array = lowCase.split("");
-                var reArray = array.reverse();
-                var string = reArray.join("");
-                //Step 3: Output the data to user using if else statement
-                if (lowCase === string) {
-                    $("#palindromeResults").text('Hooray ' + palin + ' is a palindrome!')
-                }
-                else {
-                    $("#palindromeResults").text('This is not a palindrome.')
-                }
-            })
-            $("#clearPal").click(function () {
-                $("#Pal").val("");
-                $("#palindromeResults").text("")
-            })
-            })
-        //Show/Hide Code button FizzBuzz
-        $(function () {
-            $("#fizzyCode").hide();
-            $("#codeFizz").click(function () {
-                $("#fizzyCode").toggle();
-
-                if ($(this).text() == "Code") {
-                    $(this).text("Hide");
-                }
-                else { $(this).text("Code") }
-            })
-
-            //The ominous FizzBuzz Challenge
-            $("#btnFizz").click(function () {
-                //Step 1: Get user data
-                var fizz = $("#fizz").val();
-                var buzz = $("#buzz").val();
-                //Step 2: Calculate for FizzBuzz
-                var returnValue = "";
-                var i = 1
-                for (; i <= 100; i++) {
-                    if (i % fizz == 0 && i % buzz == 0) {
-                        //Step 3: Output findings to user
-                        $("#fizzbuzzResults").text(returnValue += 'FizzBuzz ');
-                    }
-                    else if (i % fizz == 0) {
-                        $("#fizzbuzzResults").text(returnValue += 'Fizz ');
-                    }
-                    else if (i % buzz == 0) {
-                        $("#fizzbuzzResults").text(returnValue += 'Buzz ');
-                    }
-                    else {
-                        $("#fizzbuzzResults").text(returnValue += i + ' ');
-                    }
-                }
-            })
-            $("#clearFizz").click(function () {
-                $("#fizz").val("");
-                $("#buzz").val("");
-                $("#fizzbuzzResults").text("")
-            })
-            })
-    </script>
+    <script>SyntaxHighlighter.all()</script>           
+    <script src="Scripts/JavaScriptCode/JavaScriptCode.js"></script>
+    
 </body>
 </html>

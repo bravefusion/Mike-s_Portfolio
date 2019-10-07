@@ -135,6 +135,7 @@
     <Content Include="js\owl.carousel.min.js" />
     <Content Include="js\popper.min.js" />
     <Content Include="js\scrollax.min.js" />
+    <Content Include="Scripts\JavaScriptCode\JavaScriptCode.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shAutoloader.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shBrushAppleScript.js" />
     <Content Include="Scripts\SyntaxHighlighter\scripts\shBrushAS3.js" />
