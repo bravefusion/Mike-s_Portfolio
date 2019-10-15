@@ -1,4 +1,4 @@
-﻿//Show/Hide Code button Math Challenge
+﻿//Show/Hide Code btn Math Challenge
 $(function () {
     
     //The Math Challenge
@@ -48,11 +48,18 @@ $(function () {
         $(this).text("Code")
     };
     });
+    //Number Validation
+    $("#input1, #input2, #input3, #input4, #input5").keypress(function (e) {
+        if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+            return false;
+        }
+    })
 })
 
 //Show/Hide Code btn Factorial
 $(function () {
     $("#factorCode").hide();
+
     $("#codeFact").click(function () {
     $("#factorCode").toggle();
 
@@ -83,8 +90,16 @@ $(function () {
         $("#fact").val("")
         $("#factorResults").text("")
     })
+    //Number Validation
+    $("#fact").keypress(function (e) {
+        if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+            return false;
+        }
+    })
+
+
 })
-//Show/Hide Code button Palindrome
+//Show/Hide Code btn Palindrome
 $(function () {
     $("#dromeCode").hide();
     $("#codePal").click(function () {
@@ -117,6 +132,13 @@ $(function () {
     $("#clearPal").click(function () {
         $("#Pal").val("");
         $("#palindromeResults").text("")
+    })
+
+    //Number Validation
+    $("#input1, #input2, #input3, #input4, #input5").keypress(function (e) {
+        if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+            return false;
+        }
     })
 })
 //Show/Hide Code btn FizzBuzz
@@ -160,5 +182,12 @@ $(function () {
         $("#fizz").val("");
         $("#buzz").val("");
         $("#fizzbuzzResults").text("")
+    })
+
+    //Number Validation
+    $("#fizz, #buzz").keypress(function (e) {
+        if (!(e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) {
+            return false;
+        }
     })
 })
