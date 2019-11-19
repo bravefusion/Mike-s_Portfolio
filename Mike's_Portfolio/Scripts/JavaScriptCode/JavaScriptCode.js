@@ -160,7 +160,7 @@ $(function () {
         var buzz = $("#buzz").val();
         //Step 2: Calculate for FizzBuzz
         var returnValue = "";
-        for (i=0; i <= 100; i++) {
+        for (i=1; i <= 100; i++) {
             if (i % fizz == 0 && i % buzz == 0) {
                 //Step 3: Output findings to user
                 $("#fizzbuzzResults").text(returnValue += 'FizzBuzz ');
