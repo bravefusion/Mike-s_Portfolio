@@ -75,6 +75,7 @@
     <Content Include="css\bootstrap\bootstrap-reboot.css" />
     <Content Include="css\css\bootstrap-reboot.css" />
     <Content Include="css\css\mixins\_text-hide.css" />
+    <Content Include="css\favicon-32x32.png" />
     <Content Include="css\flaticon.css" />
     <Content Include="css\icomoon.css" />
     <Content Include="css\ionicons.min.css" />
@@ -100,10 +101,14 @@
     <Content Include="images\csharp.png" />
     <Content Include="images\CSS3_logo_and_wordmark.svg.png" />
     <Content Include="images\Fake Portfolio pic.jpg" />
+    <Content Include="images\favicon-16x16.png" />
     <Content Include="images\HTML5_Logo_512.png" />
     <Content Include="images\image_1.jpg" />
     <Content Include="images\image_2.jpg" />
     <Content Include="images\image_3.jpg" />
+    <Content Include="images\IMG_9074.PNG" />
+    <Content Include="images\IMG_9076.JPG" />
+    <Content Include="images\IMG_9077.JPG" />
     <Content Include="images\jquery.png" />
     <Content Include="images\loc.png" />
     <Content Include="images\microsoft-sql-server-logo-03.png" />
@@ -120,6 +125,8 @@
     <Content Include="images\staff-2.jpg" />
     <Content Include="images\staff-3.jpg" />
     <Content Include="images\staff-4.jpg" />
+    <Content Include="images\tempprof.jpg" />
+    <Content Include="images\tempprof2.jpg" />
     <Content Include="images\work-1.jpg" />
     <Content Include="images\work-2.jpg" />
     <Content Include="images\work-3.jpg" />
@@ -221,6 +228,7 @@
     <Content Include="fonts\open-iconic\open-iconic.woff" />
     <Content Include="images\.DS_Store" />
     <Content Include="js\.DS_Store" />
+    <Content Include="images\Michael Hinton FINAL Resume.pdf" />
     <None Include="packages.config" />
     <Content Include="scss\.DS_Store" />
     <Content Include="scss\bootstrap\.DS_Store" />
@@ -324,6 +332,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
