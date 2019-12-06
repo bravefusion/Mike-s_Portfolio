@@ -84,6 +84,7 @@
     <Content Include="css\owl.carousel.min.css" />
     <Content Include="css\owl.theme.default.min.css" />
     <Content Include="css\style.css" />
+    <Content Include="favicon.ico" />
     <Content Include="fonts\flaticon\backup.txt" />
     <Content Include="fonts\flaticon\font\flaticon.css" />
     <Content Include="fonts\flaticon\font\flaticon.html" />
